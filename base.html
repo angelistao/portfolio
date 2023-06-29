@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <link rel="stylesheet" href="look.css">
+    
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <script>
+    function copiarEmail() {
+
+    var textoCopiado = document.getElementById("email");
+    /* Deixamos o texto selecionado (em azul) */
+  
+    textoCopiado.select();
+    /* Copia o texto que está selecionado */
+    document.execCommand("copy");
+  
+    alert("Email copiado para a área de transferência!");
+  }
+  </script>
+  
+  <section>
+    <header>
+      <img src="C:/Users/User/Desktop/angela/perfil.png"/>
+      </header>
+  <h1>Angela Mahlke (@angelistao)</h1>
+  
+  <div> 
+
+  
+    🖥️ Graduanda em Ciência da Computação
+    <br>
+    <br>
+    <input type="text" value="angel.mahlke@gmail.com" id="email" />
+
+    <a> <button class="glow-on-hover" id="email" onclick="copiarEmail();" >Copiar Email</button></a>
+    <h2>Links</h2>
+    <a href="https://github.com/angelistao">  <button class="glow-on-hover" type="button">GitHub</button> </a>
+    <br>  
+    <br> 
+    <a href="https://codepen.io/angelistao">  <button class="glow-on-hover" type="button">Outros projetos</button> </a>
+    <br>  
+    <br>
+    <a href="https://www.goodreads.com/angelamahlke">  <button class="glow-on-hover" type="button">GoodReads</button> </a>
+
+  </div>
+    
+   
+  </section>
+
+</html>
