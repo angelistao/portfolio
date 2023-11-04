@@ -19,8 +19,8 @@ body {
     margin-right: auto;
     max-width: 420px;
     margin-top: 150px;
-    background-color:rgb(45, 40, 40);
-    padding: 20px;
+    background-color:rgb(0, 0, 0);
+    padding: 40px;
     border-radius: 5%;
     text-align: center;
 
@@ -39,12 +39,12 @@ body {
   header {
     background-size: cover;
     border-radius: 5%;
-    height: 100px;
+    height: 120px;
   }
   
   
   div {
-    padding: 50px;
+    padding: 25px;
     border-style: inset;
     background-color: rgb(123, 123, 123);
     color: rgb(219, 219, 219);
