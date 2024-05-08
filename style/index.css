@@ -1,7 +1,7 @@
 
 
 body {
-  background-image: url('https://i.gifer.com/76YS.gif');
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/980a8682-fc41-45db-863f-0ab02dad6f07/dfgr4ej-a8518f25-6643-4b7a-bb69-8364cd97b936.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk4MGE4NjgyLWZjNDEtNDVkYi04NjNmLTBhYjAyZGFkNmYwN1wvZGZncjRlai1hODUxOGYyNS02NjQzLTRiN2EtYmI2OS04MzY0Y2Q5N2I5MzYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0KEG1kJQP-DbHOoWaxP3t1b8uCmoMGk6q6YRjbJQ1V0');
   background-size: cover;
   height: 90vh;
   opacity:1;
@@ -11,7 +11,7 @@ body {
   
   section {
     -webkit-box-shadow: 10px 0px 50px 10px rgba(45, 40, 40); 
-    box-shadow: 5px 0px 50px 5px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 50px 5px rgba(103, 103, 103, 0.64);
     box-shadow: 0;
     
     display:block;
@@ -19,7 +19,7 @@ body {
     margin-right: auto;
     max-width: 420px;
     margin-top: 150px;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(37, 37, 37);
     padding: 40px;
     border-radius: 5%;
     text-align: center;
@@ -28,7 +28,7 @@ body {
   
   section h1 {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     display: block;
     margin-left: auto;
@@ -38,7 +38,7 @@ body {
   
   header {
     background-size: cover;
-    border-radius: 5%;
+    border-radius: 20%;
     height: 120px;
   }
   
@@ -62,7 +62,7 @@ body {
   
   /*Link não visitado */
   a:link {
-    color: black;
+    color: rgb(196, 31, 31);
     text-decoration: none;
   }
   
@@ -92,7 +92,7 @@ body {
     border: none;
     outline: none;
     color: #fff;
-    background: #111;
+    background: #5a5a5a;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -101,7 +101,7 @@ body {
 }
 
 .contatoemail:hover{
-  background: #000;
+  background: #666666;
 }
 
 .contatoemail{
@@ -165,11 +165,11 @@ body {
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 10px;  
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #5f5f5f
 }
 
 .glow-on-hover:active:after {
@@ -187,7 +187,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: #4d4d4d;
     left: 0;
     top: 0;
     border-radius: 10px;
