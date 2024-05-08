@@ -89,6 +89,9 @@ header {
 }
 
 header img {
+  
+  border: 3px solid #fff; /* Define uma borda sólida de 3 pixels na cor branca */
+  border-radius: 10px; /* Opcional: Adiciona uma borda arredondada */
   max-width: 100%; /* Imagens redimensionáveis */
   height: auto;
 }
@@ -147,18 +150,30 @@ header img {
   
   /*botao*/
 
-  .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #5a5a5a;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    font-family: "Lexend", sans-serif;
+.glow-on-hover {
+  width: 300px;
+  height: 80px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5a5a5a;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: "Lexend", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {
+  width: 20px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin-right: auto; /* Espaçamento entre a logo e o texto */
+  color:#fff
 }
 
 .contatoemail:hover{
@@ -257,8 +272,36 @@ header img {
 
 }
 
+
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+.header-img-container {
+  position: relative;
+}
+
+.fire-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.imgur.com/8UhzXfj.png'); /* Imagem de chamas */
+  background-size: cover;
+  animation: flicker 1s infinite alternate; /* Animação das chamas */
+  border-radius: 10px; /* Borda arredondada para as chamas */
+}
+
+/* Animação das chamas */
+@keyframes flicker {
+  0% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
 }
