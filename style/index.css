@@ -8,39 +8,100 @@ body {
   font-family: "Lexend", sans-serif;
 }
   
-  
+@media (max-width: 768px) {
   section {
-    -webkit-box-shadow: 10px 0px 50px 10px rgba(45, 40, 40); 
-    box-shadow: 5px 0px 50px 5px rgba(103, 103, 103, 0.64);
-    box-shadow: 0;
-    
-    display:block;
-    margin-left:auto;
-    margin-right: auto;
-    max-width: 420px;
-    margin-top: 150px;
-    background-color:rgb(37, 37, 37);
-    padding: 40px;
-    border-radius: 5%;
-    text-align: center;
+    width: 100%; /* Em telas menores, ajuste para largura total */
+  }
+}
 
-  }
   
-  section h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
+section {
+  -webkit-box-shadow: 10px 0px 50px 10px rgba(45, 40, 40); 
+  box-shadow: 5px 0px 50px 5px rgba(168, 52, 52, 0.64);
+  box-shadow: 0;
   
-  header {
-    background-size: cover;
-    border-radius: 20%;
-    height: 120px;
+  width: 90%; /* Em vez de um valor fixo, use uma porcentagem */
+  margin: 0 auto; /* Centralize a seção horizontalmente */
+
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+  max-width: 420px;
+  margin-top: 150px;
+  background-color:rgb(37, 37, 37);
+  padding: 40px;
+  border-radius: 5%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s forwards, moveInFromLeft 1s forwards, float 3s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-5px); /* Mova para cima */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+  
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+  }
+
+section h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+header {
+  background-size: cover;
+  border-radius: 20%;
+  height: 120px;
+  animation: spin 4s linear infinite;
+}
+
+header img {
+  max-width: 100%; /* Imagens redimensionáveis */
+  height: auto;
+}
+
+
+@keyframes spin {
+  50% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
   
   
   div {

@@ -3,6 +3,7 @@
 
   <head>
   <link rel="stylesheet" href="style/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
@@ -21,12 +22,52 @@
     alert("Email copiado para a área de transferência!");
     }
   </script>
-  
-  <section>
-    <header>
-      <img src="assets/angelinha.jpg"/>
-      </header>
-    <h1>Angela Mahlke (@angelistao)</h1>
+
+<style>
+  /* Seu CSS existente aqui */
+
+  /* Efeito de digitação para o cabeçalho */
+  .typing-animation {
+    overflow:visible;
+    border-right: .20em solid rgb(255, 255, 255); /* Cor do cursor de digitação */
+    white-space: nowrap; /* Garante que o texto não quebre a linha */
+    margin: 0 auto; /* Centraliza o texto */
+    letter-spacing:normal; /* Espaçamento entre as letras */
+    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite; /* Animação da digitação */
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 50%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(255, 255, 255);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<section>
+  <header>
+    <img src="assets/angelinha.jpg" />
+  </header>
+  <h1>
+    <!-- Nome com efeito de digitação -->
+    <span class="typing-animation">Angela Mahlke (@angelistao)</span>
+  </h1>
   
     <div> 
       🖥️ Graduanda em Ciência da Computação
