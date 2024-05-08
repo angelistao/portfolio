@@ -22,8 +22,6 @@ section {
   
   width: 90%; /* Em vez de um valor fixo, use uma porcentagem */
   margin: 0 auto; /* Centralize a seção horizontalmente */
-
-  display:block;
   margin-left:auto;
   margin-right: auto;
   max-width: 420px;
@@ -32,6 +30,7 @@ section {
   padding: 40px;
   border-radius: 5%;
   text-align: center;
+  align-items: center;
   opacity: 0;
   transform: translateY(-20px);
   animation: fadeInUp 1s forwards, moveInFromLeft 1s forwards, float 3s ease-in-out infinite;
@@ -161,7 +160,7 @@ header img {
   z-index: 0;
   border-radius: 10px;
   font-family: "Lexend", sans-serif;
-  display:inline-flex;
+  display:inline-block;
   align-items: center; /* Centraliza os itens verticalmente */
   justify-content: center; /* Centraliza os itens horizontalmente */
   padding: 10px 20px;
@@ -172,8 +171,6 @@ header img {
 .logo {
   width: 20px; /* Ajuste o tamanho conforme necessário */
   height: auto;
-  margin-right: 10px; /* Espaçamento entre a logo e o texto */
-  margin-top: 0; /* Remove o espaçamento superior */
 }
 
 .contatoemail:hover{
